@@ -1,0 +1,103 @@
+.bg-orange{
+    background-color: #f68f1e;
+}
+.text-orange{
+    color: #f68f1e;
+}
+.table-header{
+    background-color: #8fc6c4;
+    padding:1rem 2rem;
+    height: 7rem;
+}
+.table-grid{
+    border-bottom: 1px solid black;
+}
+.table-grid-special{
+    border-bottom: 4px solid black;
+}
+.jumbotron{
+    background-image: url('../assets/BoostVectorBackground_2.png');
+    color:#494f54;
+}
+.jumbotron h1{
+     font-family: 'Open Sans', sans-serif;
+
+ }.jumbotron h2{
+     font-family: 'Open Sans', sans-serif;
+
+ }
+}.jumbotron p{
+
+ }
+ .prizes .table-header{
+     color: #494f54;
+
+ }
+ .prizes .table-header h6{
+     font-size: 20px;
+ }
+.prizes .table-header h3{
+     font-weight: bold ;
+ }
+
+ .prizes{
+     font-family: 'Open Sans', sans-serif;
+ }
+
+.btn-middle{
+    padding:  .5rem 1.5rem;
+    border-radius: 5rem;
+
+}
+.big-text{
+    font-size: 3rem;
+}
+.texc-grey{
+    font-size: 1.5rem;
+    color: #c7c7c7;
+}
+.bg-button{
+    background-color: #3c3f41 ;
+}
+.bg-button:hover{
+    background-color: #535658;
+}
+.container-light a{
+    color:black;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.container-description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+}
+.row-description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color:#494f54;
+
+}
+.row-description b{
+    font-size: 24px;
+}
+.text-2{
+    font-weight: bolder;
+}
+.button-container{
+    font-family: 'Open Sans', sans-serif;
+}
+.orange{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #494f54;
+}
+.container-light a:hover{
+    color: #494f54;
+}
+
+@media (max-width 960px) {
+    .container-light a {
+        font-size: .3rem;
+    }
+}
