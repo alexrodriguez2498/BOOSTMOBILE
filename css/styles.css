@@ -21,13 +21,18 @@
 }
 .jumbotron h1{
      font-family: 'Open Sans', sans-serif;
-
- }.jumbotron h2{
-     font-family: 'Open Sans', sans-serif;
+    font-size: 100px;
 
  }
-}.jumbotron p{
+.jumbotron h2 {
+     font-family: 'Open Sans', sans-serif;
+    font-size: 70px;
 
+ }
+
+.jumbotron p{
+     font-family: 'Righteous', cursive;
+    font-weight: normal;
  }
  .prizes .table-header{
      color: #494f54;
@@ -37,7 +42,7 @@
      font-size: 20px;
  }
 .prizes .table-header h3{
-     font-weight: bold ;
+     font-weight: bold;
  }
 
  .prizes{
@@ -81,20 +86,26 @@
 .row-description b{
     font-size: 24px;
 }
-.text-2{
-    font-weight: bolder;
+.second-container h1{
+    font-size: 60px;
 }
 .button-container{
     font-family: 'Open Sans', sans-serif;
 }
 .orange{
+
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: #494f54;
 }
-.container-light a:hover{
-    color: #494f54;
+.orange h1{
+    font-size: 60px;
 }
+.orange h3{
+    font-size: 35px;
+}
+
+
 
 @media (max-width 960px) {
     .container-light a {
