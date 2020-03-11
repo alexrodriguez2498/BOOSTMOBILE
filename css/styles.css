@@ -6,7 +6,7 @@
 }
 .table-header{
     background-color: #8fc6c4;
-    padding:1rem 2rem;
+    padding:16px 32px;
     height: 7rem;
 }
 .table-grid{
@@ -30,10 +30,7 @@
 
  }
 
-.jumbotron p{
-     font-family: 'Righteous', cursive;
-    font-weight: normal;
- }
+
  .prizes .table-header{
      color: #494f54;
 
@@ -55,10 +52,10 @@
 
 }
 .big-text{
-    font-size: 3rem;
+    font-size: 48px;
 }
 .texc-grey{
-    font-size: 1.5rem;
+    font-size: 24px;
     color: #c7c7c7;
 }
 .bg-button{
@@ -107,8 +104,94 @@
 
 
 
-@media (max-width 960px) {
-    .container-light a {
-        font-size: .3rem;
+
+@media(max-width: 1012px){
+    .jumbotron h1{
+        font-size:80px ;
+    }
+    .jumbotron h2{
+        font-size: 60px;
+    }
+    .big-text{
+        font-size: 38px;
+    }
+    .orange h1{
+        font-size: 50px;
+    }
+    .orange h3{
+        font-size: 30px;
     }
 }
+
+
+
+@media(max-width: 780px){
+    .jumbotron figure img{
+        width: 500px;
+    }
+    .jumbotron h1{
+        font-size: 60px;
+    }
+    .jumbotron h2{
+        font-size: 45px;
+    }
+    .second-container h1{
+        font-size: 40px;
+    }
+    .big-text{
+        font-size: 28px;
+    }
+    .texc-grey{
+        font-size: 14px;
+    }
+    .orange h1{
+        font-size: 40px;
+    }
+    .orange h3{
+        font-size: 25px;
+    }
+}
+@media(max-width: 540px){
+    .jumbotron figure img{
+        width: 400px;
+    }
+    .jumbotron h1{
+          font-size: 40px;
+      }
+    .jumbotron h2{
+        font-size: 30px;
+    }
+    .big-text{
+        font-size: 24px;
+    }
+    .texc-grey{
+        font-size: 12px;
+    }
+    .orange h1{
+        font-size: 30px;
+    }
+    .orange h3{
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: 440px){
+    .jumbotron figure img{
+        width: 300px;
+    }
+    .jumbotron h1{
+        font-size: 35px;
+    }
+    .jumbotron h2{
+        font-size: 25px;
+    }
+    .second-container h1{
+        font-size: 35px;
+    }
+    .second-container h2{
+        font-size: 25px;
+    }
+}
+
+
