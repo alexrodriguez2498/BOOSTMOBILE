@@ -19,10 +19,6 @@
     src: url('fonts/boost-next-regular.woff');
 }
 
-
-
-
-
 .bg-orange{
     background-color: #f68f1e;
 }
@@ -104,11 +100,9 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     color:#494f54;
-
 }
 .row-description b{
     font-size: 24px;
-
 }
 .second-container h1{
     font-size: 4.3rem;
@@ -118,7 +112,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 .orange{
-
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: #494f54;
@@ -126,7 +119,6 @@
 .orange h1{
     font-size: 4rem;
     font-family: "Boost Next Heavy";
-
 }
 .orange h3{
     font-size: 2.5rem;
@@ -136,7 +128,30 @@
     font-size: 1.7rem;
     font-weight: bolder;
 }
+.languages .row button{
+    color: #f68f1e;
 
+}
+.button-1{
+    border-right: 1px solid #3c3f41;
+    border-radius: unset;
+    font-family: "Boost Next Bold";
+    font-size: 1.3rem;
+}
+.button-1:hover{
+    color: #3c3f41!important ;
+
+}
+.button-2{
+    border-left: 1px solid #3c3f41;
+    border-radius: unset;
+    font-family: "Boost Next Bold";
+    font-size: 1.3rem;
+}
+.button-2:hover{
+    color: #3c3f41!important; ;
+
+}
 
 
 
