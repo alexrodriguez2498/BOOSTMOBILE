@@ -193,5 +193,15 @@
         font-size: 25px;
     }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+    .table-header{
+        height: 13rem;
+    }
+}
+@media (min-width: 992px) and (max-width: 1196px) {
+    .table-header{
+        height: 10rem;
+    }
+}
 
 
