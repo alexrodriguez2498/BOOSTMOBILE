@@ -33,11 +33,11 @@
 </div>
 
 <div class="container second-container">
-    <div class="row justify-content-center  text-orange">
-        <h1 class="  text-center">¡Haz tu cambio HOY!</h1>
+    <div class="row justify-content-center  text-orange" id="offer">
+<!--        <h1 class="  text-center">¡Haz tu cambio HOY!</h1>-->
     </div>
-    <div class="row bg-orange text-white justify-content-center">
-        <h2 class="text-center">Recibe grandes beneficios:</h2>
+    <div class="row bg-orange text-white justify-content-center" id="offer2">
+<!--        <h2 class="text-center">Recibe grandes beneficios:</h2>-->
     </div>
     <div class="row row-description">
         <div class="col-10 offset-1">
@@ -168,6 +168,10 @@
     var jsonEsp = {
         title: '<h2>Cliente de Open Mobile:</h2>' +
                 '<h1>¡Sigueme al cambio!</h1>',
+        offer: '<h1 class="  text-center">¡Haz tu cambio HOY!</h1>\n',
+
+        offer2: '<h2 class="text-center">Recibe grandes beneficios:</h2>\n',
+
         disclaimer: '<b>Condiciones de la oferta:</b>\n' +
             '        <li> $ X de descuento al mes (de por vida) solo aplica cuando se activa en planes Unlimited de Boost Mobile de\n' +
             '            $50, $60 o $80.\n' +
@@ -239,11 +243,82 @@
 
 
     };
-    var jsonEng = {};
+    var jsonEng = {
+        title: '<h2>Open Mobile client:</h2>' +
+            '<h1>Follow me to change!</h1>',
 
-    json = jsonEsp;
+        offer: '<h1 class="  text-center">Make your change TODAY!</h1>\n',
+
+        offer2: '<h2 class="text-center">Receive great benefits:</h2>\n',
+
+        disclaimer: '<b>Disclaimer:</b>\n' +
+            '        <li> $ X off per month for life good only when activated in $50, $60, or $80 Unlimited Boost Mobile plans only \n' +
+            '        </li>\n' +
+            '        <li> Bonus only applicable to active Open Mobile subscribers that migrate to Boost Mobile.</li>\n' +
+            '        <li> Offer can only be redeemed in store on qualifying plans when you switch to Boost Mobile. </li>\n' +
+            '        <li> Lifetime bonus good only for primary account holder; secondary lines not eligible. \n' +
+            '        </li>\n' +
+            '        <li> Discount for 1st month good for all lines. </li>\n' +
+            '        <li> Lifetime $X off per month will be applied as a credit once full amount is paid .</li>\n' +
+            '        <li> •	$X off first month will be applied as a credit after first month is paid. Note: The 1st month bonus /n' +
+                            'reduces the balance and hence the subscriber pays 1st month MRC – instant bonus\n' +
+            '        </li>\n' +
+            '        <li> Offer expires xx/xx/xxxx. </li>\n' +
+            '        <li> Offer good only at participating stores.</li>\n' +
+            '        <li> ffer is not a lifeline product, and they may not be a comparable lifeline product with the transfer to Boost Mobile. \n' +
+            '        </li>',
+        description1:'<li>\n' +
+            '                    <b>An instant $ 40 or $ 50 bonus per line migrated to Boost Mobile.\n' +
+            '                </li>',
+        description2:'<li>\n' +
+            '                    <b>A recurring monthly bonus</b>  for as long as you keep your line active with Boost Mobile.\n' +
+            '                    <br>\n' +
+            '                    - The amount of this monthly bonus will depend on how much is your current payment for your Open \n' +
+            '                    Mobile service (not including regulatory charges, taxes and others).\n' +
+            '                </li>',
+        tableHeader1:'<h3 class="pt-3 text-2">Open Mobile\'s Plan</h3>\n',
+        tableheader2:'<h3 class="text-2 m-0 pt-2">Instant Bonus</h3>\n' +
+            '                <h6>(applied at the time of change to Boost Mobile)</h6>',
+        tableHeader3:'<h3 class="text-2 m-0">Monthly bonus</h3>\n' +
+            '                <h6>(de por vida)</h6>',
+        prizes1:' <div class="col-12 text-center table-grid"><p class="h4">0.00 - $20.00</p></div>\n' +
+            '               <div class="col-12 text-center table-grid"><p class="h4">$20.00 - $29.99</p></div>\n' +
+            '               <div class="col-12 text-center table-grid"><p class="h4">$30.00 - $34.99</p></div>\n' +
+            '               <div class="col-12 text-center table-grid"><p class="h4">$35.00 - $39.99</p></div>\n' +
+            '               <div class="col-12 text-center table-grid"><p class="h4">$40.00 - $49.99</p></div>\n' +
+            '               <div class="col-12 text-center table-grid-special"><p class="h4">$50.00 or more</p></div>',
+        prizes2:'<div class="col-12 text-center table-grid"><P class="h4">$40.00</P></div>\n' +
+            '                <div class="col-12 text-center table-grid"><P class="h4">$40.00</P></div>\n' +
+            '                <div class="col-12 text-center table-grid"><P class="h4">$50.00</P></div>\n' +
+            '                <div class="col-12 text-center table-grid"><P class="h4">$50.00</P></div>\n' +
+            '                <div class="col-12 text-center table-grid"><P class="h4">$50.00</P></div>\n' +
+            '                <div class="col-12 text-center table-grid-special"><P class="h4">$50.00</P></div>',
+        prizes3:'<div class="col-12 text-center table-grid"><p class="h4">$25.00</p></div>\n' +
+            '                <div class="col-12 text-center table-grid"><p class="h4">$15.00</p></div>\n' +
+            '                <div class="col-12 text-center table-grid"><p class="h4">$10.00</p></div>\n' +
+            '                <div class="col-12 text-center table-grid"><p class="h4">$10.00</p></div>\n' +
+            '                <div class="col-12 text-center table-grid"><p class="h4">$5.00</p></div>\n' +
+            '                <div class="col-12 text-center table-grid-special"><p class="h4">$0.00</p></div>',
+        buttonLink:'<p class="m-0"><b class="text-orange big-text">visit your nearest store</b><br>\n' +
+            '                    <b class="texc-grey">click to see locations</b></p>',
+        link:'<p class="text-center">\n' +
+            '                If you prefer not to receive text messages from Open Mobile,<a href="#">click here.</a>\n' +
+            '            </p>',
+        footerTitle:'<h1 class="font-weight-bold">Boost Mobile offers you:</h1>\n',
+        footerText1:'<figure><img src="assets/icons_boost/ico_boost_ubicacion.png"></figure>\n' +
+            '<p class="text-center ">Stores throughout the island</p>\n',
+        footerText2:'   <figure><img src="assets/icons_boost/ico_boost_paises.png"></figure>\n' +
+            '            <p class="text-center">Unlimited service covering Puerto Rico, the US Virgin Islands and the United Statess</p>',
+        footerText3:'<figure><img src="assets/icons_boost/ico_boost_smartphones.png"></figure>\n' +
+            '            <p class="text-center">Wide variety of smartphones</p>',
+        footerSubTitle:'<h3 class="font-weight-bold">CALL 611 TODAY AND FOLLOW US FOR A CHANGE!</h3>\n'
+    };
+
+    json = jsonEng;
 
     $('#title').html(json.title);
+    $('#offer').html(json.offer);
+    $('#offer2').html(json.offer2);
     $('#disclaimer').html(json.disclaimer);
     $('#description1').html(json.description1);
     $('#description2').html(json.description2);
